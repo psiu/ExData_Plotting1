@@ -33,7 +33,7 @@ loadRawData <- function() {
 data <- loadRawData()
 
 png(outputFile, width=480, height=480)
-plot(Global_active_power ~ Date, data, ylab="Global Active Power (kilowatts)", type = 'l')
+plot(Global_active_power ~ Date, data, ylab="Global Active Power (kilowatts)", type = 'l', xlab="")
 
 dev.off()
 
