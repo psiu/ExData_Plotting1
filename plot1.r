@@ -5,7 +5,7 @@ library(dplyr)
 ## Constants and controls
 rawDataFile <- "exdata-data-household_power_consumption.zip"
 downloadURL <- "https://github.com/psiu/ExData_Plotting1/blob/master/exdata-data-household_power_consumption.zip"
-outputFile <- "plot2.png"
+outputFile <- "plot1.png"
 
 #############################
 ## Helper functions
@@ -28,13 +28,12 @@ loadRawData <- function() {
 }
 
 ###########################
-##  Plot 2
+##  Plot 1
 
 data <- loadRawData()
 
 png(outputFile, width=480, height=480)
-plot(Global_active_power ~ Date, data, ylab="Global Active Power (kilowatts)", type = 'l')
-
+hist(data$Global_active_power, xlab="Global Active Power (kilowatts)", main ="Global Active Power", col = "Orangered")
 dev.off()
 
 
