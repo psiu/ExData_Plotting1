@@ -44,7 +44,7 @@ plot(Global_active_power ~ Date, data, ylab="Global Active Power", type = 'l', x
 plot(Sub_metering_1  ~ Date, data, ylab="Energy sub metering", type = 'l', xlab ="")
 lines(data$Sub_metering_2 ~ data$Date, col = "red")
 lines(data$Sub_metering_3 ~ data$Date, col = "blue")
-legend("topright", col = c("black", "red", "blue"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), lwd = 1, lty = 1, cex = .8, bty = "n")
+legend("topright", col = c("black", "red", "blue"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), lwd = 1, lty = 1, cex = .9, bty = "n")
 
 ## Voltage
 plot(Voltage ~ Date, data, ylab="Voltage", type = 'l', xlab="datetime")
